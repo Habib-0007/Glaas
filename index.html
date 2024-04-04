@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="ie=edge"
+		/>
+		<link
+			rel="stylesheet"
+			href="./style.css"
+		/>
+		<title
+			>Glassmorphism Card Creator</title
+		>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Glaaas</h1>
+				<div class="head-socials">
+					<a href="/" target="_blank">
+						<i
+							class="fab fa-github"
+						></i>
+					</a>
+					<a href="/" target="_blank">
+						<i
+							class="fab fa-twitter"
+						></i>
+					</a>
+				</div>
+			</header>
+			<section class="selection-area">
+				<section class="card-box">
+					<div class="card"></div>
+				</section>
+				<section class="selection">
+					<input
+						type="text"
+						placeholder="Color"
+						id="color"
+						data-coloris
+					/>
+					<div class="effect-box">
+						<strong>Blur</strong>
+						<input
+							type="range"
+							id="blur"
+							class="slider"
+							min="0"
+							value="20"
+							max="50"
+						/>
+					</div>
+					<div class="effect-box">
+						<strong>Opacity</strong>
+						<input
+							type="range"
+							id="opacity"
+							class="slider"
+							min="0"
+							value="0.6"
+							step="0.05"
+							max="1"
+						/>
+					</div>
+				</section>
+			</section>
+		</main>
+		<script src="./script.js"></script>
+	</body>
+</html>

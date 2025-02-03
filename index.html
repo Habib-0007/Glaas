@@ -1,86 +1,167 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="ie=edge"
-		/>
-		<link
-			rel="stylesheet"
-			href="./style.css"
-		/>
-		<title
-			>Glassmorphism Card Creator</title
-		>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"
-		/>
-		<script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
-	</head>
-	<body>
-		<main>
-			<header>
-				<h1>Glaaas</h1>
-				<div class="head-socials">
-					<a href="/" target="_blank">
-						<i
-							class="fab fa-github"
-						></i>
-					</a>
-					<a href="/" target="_blank">
-						<i
-							class="fab fa-twitter"
-						></i>
-					</a>
-				</div>
-			</header>
-			<section class="selection-area">
-				<section class="card-box">
-					<div class="card"></div>
-				</section>
-				<section class="selection">
-					<input
-						type="text"
-						placeholder="Color"
-						id="color"
-						data-coloris
-					/>
-					<div class="effect-box">
-						<strong>Blur</strong>
-						<input
-							type="range"
-							id="blur"
-							class="slider"
-							min="0"
-							value="20"
-							max="50"
-						/>
-					</div>
-					<div class="effect-box">
-						<strong>Opacity</strong>
-						<input
-							type="range"
-							id="opacity"
-							class="slider"
-							min="0"
-							value="0.6"
-							step="0.05"
-							max="1"
-						/>
-					</div>
-				</section>
-			</section>
-		</main>
-		<script src="./script.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+      Glassmorphic Card Creator | Customizable Glass Effect Generator
+    </title>
+    <meta
+      name="description"
+      content="Create stunning glassmorphic cards with a customizable glass effect generator. Design your own cards, experiment with transparency, blurs, and add interactive CSS for unique UI components."
+    />
+    <meta
+      name="keywords"
+      content="glassmorphic, card creator, glass effect, transparent UI, CSS generator, interactive card design, customizable UI, glassmorphism"
+    />
+    <meta name="author" content="Habib Opeyemi Adebayo" />
+    <meta property="og:title" content="Glassmorphic Card Creator" />
+    <meta
+      property="og:description"
+      content="A tool to generate customizable glassmorphic cards with beautiful glass effects."
+    />
+    <meta property="og:image" content="https://glass.vercel.app/a.png" />
+    <meta property="og:url" content="https://glaas.vercel.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Glassmorphic Card Creator" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Glassmorphic Card Creator" />
+    <meta
+      name="twitter:description"
+      content="Create unique glass effect cards with this customizable generator for modern UIs."
+    />
+    <meta name="twitter:image" content="https//x.com/Habib__001" />
+    <meta name="twitter:creator" content="@Habib__001" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="canonical" href="https://glaas.vercel.app" />
+
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="./style/index.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Glassmorphic Card Creator",
+        "description": "A customizable tool for generating glassmorphic cards with interactive CSS effects for modern UI components.",
+        "url": "https://glaas.vercel.app",
+        "mainEntityOfPage": "https://glaas.vercel.app",
+        "image": "https://glaas.vercel.app/a.png",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Habib Opeyemi Adebayo",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://glaas.vercel.app"
+          }
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Habib Opeyemi Adebayo"
+        },
+        "datePublished": "2025-02-03",
+        "dateModified": "2025-02-03",
+        "keywords": [
+          "glassmorphic",
+          "card creator",
+          "glass effect",
+          "transparent UI",
+          "CSS generator",
+          "customizable UI",
+          "glassmorphism"
+        ],
+        "potentialAction": {
+          "@type": "Action",
+          "name": "Create Glassmorphic Cards",
+          "target": "https://glass.vercel.app"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Glaaas</h1>
+        <bav class="head-socials">
+          <a href="/" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="/" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </bav>
+      </header>
+      <section class="preview">
+        <div id="glass-box" class="glass">Preview</div>
+      </section>
+
+      <div class="controls">
+        <label
+          >Blur:
+          <input
+            type="range"
+            id="blur"
+            min="0"
+            max="20"
+            value="10"
+            class="highlight"
+        /></label>
+        <label
+          >Opacity:
+          <input
+            type="range"
+            id="opacity"
+            min="0"
+            max="1"
+            step="0.1"
+            value="0.5"
+            class="highlight"
+        /></label>
+        <label
+          >Border Radius:
+          <input
+            type="range"
+            id="border-radius"
+            min="0"
+            max="50"
+            value="10"
+            class="highlight"
+        /></label>
+        <label
+          >Background:
+          <input type="color" id="bg-color" value="#ffffff" class="highlight"
+        /></label>
+      </div>
+
+      <section class="css-container">
+        <button id="copy-css">Copy CSS</button>
+        <pre
+          class="css"
+        ><code class="language-css" id="css-output"></code></pre>
+      </section>
+      <section class="tailwind-container">
+        <button id="copy-tailwind">Copy Tailwind</button>
+        <pre
+          class="css"
+        ><code class="language-css" id="tailwind-output"></code></pre>
+      </section>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        hljs.highlightAll();
+      });
+    </script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
